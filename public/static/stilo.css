@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Nosifer', sans-serif;
+	}
+	body{
+		background-color: #720000;
+		height: 100% ;
+		width: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+		z-index: 1;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: 0 10px 0 10px;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		position: relative;
+        left: 1000px;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid black;
+		padding-bottom: 5px;
+		color: black ;
+		transition: .5s;
+		transform: scale(1.2);
+	}
+	
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 3;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	/*mian section vertical*/
+	main{
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.section{
+		height: 100%;
+		position: fixed;
+	}
+
+	.vertical{
+		width: 30px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		position: relative;
+		z-index: -2;
+	}
+
+	.user{
+		min-width: 45px;
+		justify-content: space-around;
+		position: absolute;
+		top: 85px;
+		left: 20%;
+	}
+
+	.user a{	
+		text-decoration: none;
+		font-size: 28px;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		background: #720000;
+		color: #f1f1f1;
+		border-radius: 50%;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+		transition: all .4s ease-in-out;
+	}
+
+	.user :hover{
+		transform: scale(1.2);
+		color:black
+	}
+
+	.icon{
+		min-width: 45px;
+		justify-content: space-around;
+		position: absolute;
+		top: 300px;
+		left: 20%;
+	}
+
+	.icon a {
+		text-decoration: none;
+		font-size: 28px;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		margin: 3px;
+		background:#720000 ;
+		color: #f1f1f1;
+		border-radius: 50%;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+		transition: all .4s ease-in-out;
+	}
+
+	.icon a:hover{
+		transform: scale(1.2);
+		color: black;
+	}
+
+	/*main*/
+	.centro{
+		height: 100%;
+		width: 100%;
+		position: relative;
+		z-index: -1;
+	}
+	.imagen{
+		position: absolute;
+		left: 38%;
+		top: 60px;
+		height: 450px;
+	}
+	.busqueda{
+		position:absolute;
+		left: 37%;
+		top: 400px;
+	}
+
+	.busqueda input{
+		width: 500px;
+		height: 38px;
+		border-radius: 30px;
+        padding: 5px;
+	}
+
+	.contenedor{
+		position: relative;
+		margin: 10px;
+		height: 960px;
+		bottom: -900px;
+	
+	}
+	.box{
+		position: absolute;
+		left: 46%;
+		top: 400px;
+		position: relative;
+		width: 200px;
+		height: 200px;
+		transform-style: preserve-3d;
+		animation: animate 40s linear infinite;
+	}
+	
+	@keyframes animate{
+		0%{
+			transform: perspective(1000px) rotatey(0deg);
+		}
+		100%{
+			transform: perspective(1000px) rotatey(360deg);
+			-webkit-transform: perspective(1000px) rotatey(360deg);
+			-moz-transform: perspective(1000px) rotatey(360deg);
+			-ms-transform: perspective(1000px) rotatey(360deg);
+			-o-transform: perspective(1000px) rotatey(360deg);
+	}
+	}
+	
+	.box span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform-origin: center;
+		transform-style: preserve-3d;
+		transform: rotateY(calc(var(--i)* 45deg)) translatez(400px);
+		-webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004) ;
+		-webkit-transform: rotateY(calc(var(--i)* 45deg)) translatez(400px);
+		-moz-transform: rotateY(calc(var(--i)* 45deg)) translatez(400px);
+		-ms-transform: rotateY(calc(var(--i)* 45deg)) translatez(400px);
+		-o-transform: rotateY(calc(var(--i)* 45deg)) translatez(400px);
+	}
+	
+	.box span img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	
+	/*footer*/
+	footer{
+		position: relative;
+		margin: 10px;
+		top: 1700px;  
+	  }
+	  .buttons {
+		min-width: 200px;
+		display: flex;
+		justify-content: space-around;
+	  }
+	  
+	  .buttons a {
+		text-decoration: none;
+		font-size: 28px;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		background: #720000;
+		color: #f1f1f1;
+		border-radius: 50%;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+		transition: all .4s ease-in-out;
+	  }
+	  
+	   .buttons .face a:hover {
+		transform: scale(1.2);
+		background-image: radial-gradient(circle at 87.5% 12.5%, #366bdd 0,  #366bdd 100%);
+	  }
+
+	  .buttons .twit a:hover {
+		transform: scale(1.2);
+		background-image: radial-gradient(circle at 87.5% 12.5%, #00acee 0,  #00acee 100%);
+	  }
+
+	  .buttons .what a:hover {
+		transform: scale(1.2);
+		background-image: radial-gradient(circle at 87.5% 12.5%, #25D366 0,  #25D366 100%);
+	  }
+
+	  .buttons .yout a:hover {
+		transform: scale(1.2);
+		color:#c4302b;
+		background-image: radial-gradient(circle at 87.5% 12.5%, black 0,  black 100%);
+	  }
+
+	  .buttons .gith a:hover {
+		transform: scale(1.2);
+		background-image: radial-gradient(circle at 87.5% 12.5%, #171515 0,  #171515 100%);
+	  }
+
+	  .buttons .inst a:hover {
+		transform: scale(1.2);
+		background-image: radial-gradient(circle at 87.5% 12.5%, #0090ff 0, #008cff 6.25%, #0086ff 12.5%, #0080ff 18.75%, #4779ff 25%, #7371fa 31.25%, #9268f0 37.5%, #aa5fe5 43.75%, #be55d8 50%, #ce4bca 56.25%, #dc40ba 62.5%, #e636aa 68.75%, #ee2d9a 75%, #f32789 81.25%, #f62678 87.5%, #f72a67 93.75%, #f63157 100%);
+	  }

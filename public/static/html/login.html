@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <main class="form">
+        <form action="#" class="sub-form">
+            <div class="upper-form">
+                <div class="cabecera">
+                    <a href="/static/index.html" class="atras">
+                        <img src="/static/img/arrow-back-sharp.svg" alt="atras">
+                    </a>
+                    <h2>Formulario Login</h2>
+                </div>
+                <aside class="btn-social">
+                    <button class="btn-facebook">
+                        <picture>
+                            <img src="/static/img/baseline-facebook.svg" alt="" width="25px" height="25px">
+                        </picture>
+                    </button>
+                    <button class="btn-gmail">
+                        <picture>
+                            <img src="/static/img/google-gmail.svg" alt="" width="20px" height="25px">
+                        </picture>
+                    </button>
+                </aside>
+                <div class="separador">
+                    <hr class="izquierda">
+                    <p>o</p>
+                    <hr class="derecha">
+                </div>
+                <label for="Username">Email</label><br>
+                <input type="email" name="username"><br>
+                <label for="password">Password</label><br>
+                <span class="Eye">
+                <i class="bx bx-hide"></i>
+                </span>
+                <input type="password" class="pass" name="password" >
+                <br>
+
+                <div class="btn">
+                    <button type="submit">Login</button><br>
+                </div>
+            </div>
+            <div class="bottom-form">
+                <div class="no-account">No tienes una cuenta?</div>
+                <a href="/static/html/registro.html" class="Signup">Registrarse</a>
+            </div>
+        </form>
+    </main>
+    <script src="/static/js/vista.js"></script>
+</body>
+</html>
