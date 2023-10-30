@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Tilt+Prism&display=swap');
 
 	*{
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		font-family: 'Nosifer', sans-serif;
+		font-family: 'Akshar', sans-serif;
 	}
 	body{
-		background-color: #720000;
+		background-color: black;
 		height: 100% ;
 		width: 100%;
 		background-repeat: no-repeat;
@@ -32,18 +31,18 @@
 	}
 	.container .btn-menu label{
 		color: #fff;
-		font-size: 25px;
+		font-size: 30px;
 		cursor: pointer;
 	}
 	.logo h1{
 		color: #fff;
 		font-weight: 400;
-		font-size: 22px;
+		font-size: 25px;
 		margin-left: 10px;
 	}
 	.container .menu{
 		position: relative;
-        left: 1000px;
+    left: 1200px;
 		line-height: 100px;
 	}
 	.container .menu a{
@@ -54,13 +53,17 @@
 		color: #fff;
 		transition: all 0.3s ease;
 		border-bottom: 2px solid transparent;
-		font-size: 15px;
+		font-size: 25px;
 		margin-right: 5px;
-	}
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+}
 	.container .menu a:hover{
-		border-bottom: 2px solid black;
+		border-bottom: 2px solid #fff;
 		padding-bottom: 5px;
-		color: black ;
+		color: #fff ;
 		transition: .5s;
 		transform: scale(1.2);
 	}
@@ -151,23 +154,31 @@
 		left: 20%;
 	}
 
-	.user a{	
+	.user a{
 		text-decoration: none;
 		font-size: 28px;
 		width: 40px;
 		height: 40px;
 		line-height: 40px;
 		text-align: center;
-		background: #720000;
+		background: black;
 		color: #f1f1f1;
 		border-radius: 50%;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+		box-shadow: 2px 2px 5px #fff;
 		transition: all .4s ease-in-out;
-	}
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		-webkit-transition: all .4s ease-in-out;
+		-moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		-o-transition: all .4s ease-in-out;
+}
 
 	.user :hover{
 		transform: scale(1.2);
-		color:black
+		color: #fff;
 	}
 
 	.icon{
@@ -186,17 +197,29 @@
 		line-height: 40px;
 		text-align: center;
 		margin: 3px;
-		background:#720000 ;
+		background:black;
 		color: #f1f1f1;
 		border-radius: 50%;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+		box-shadow: 2px 2px 5px #fff;
 		transition: all .4s ease-in-out;
-	}
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		-webkit-transition: all .4s ease-in-out;
+		-moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		-o-transition: all .4s ease-in-out;
+}
 
 	.icon a:hover{
 		transform: scale(1.2);
-		color: black;
-	}
+		color:#fff;
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-o-transform: scale(1.2);
+}
 
 	/*main*/
 	.centro{
@@ -218,7 +241,7 @@
 	}
 
 	.busqueda input{
-		width: 500px;
+		width: 550px;
 		height: 38px;
 		border-radius: 30px;
         padding: 5px;
@@ -240,7 +263,7 @@
 		height: 200px;
 		transform-style: preserve-3d;
 		animation: animate 40s linear infinite;
-	}
+}
 	
 	@keyframes animate{
 		0%{
@@ -283,7 +306,7 @@
 	/*footer*/
 	footer{
 		position: relative;
-		margin: 10px;
+		margin: 100px;
 		top: 1700px;  
 	  }
 	  .buttons {
@@ -299,14 +322,22 @@
 		height: 60px;
 		line-height: 60px;
 		text-align: center;
-		background: #720000;
+		background: black;
 		color: #f1f1f1;
 		border-radius: 50%;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+		box-shadow: 2px 2px 5px #fff;
 		transition: all .4s ease-in-out;
-	  }
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		-webkit-transition: all .4s ease-in-out;
+		-moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		-o-transition: all .4s ease-in-out;
+}
 	  
-	   .buttons .face a:hover {
+	  .buttons .face a:hover {
 		transform: scale(1.2);
 		background-image: radial-gradient(circle at 87.5% 12.5%, #366bdd 0,  #366bdd 100%);
 	  }

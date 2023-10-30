@@ -31,7 +31,7 @@ body {
     border-radius: 12px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
         rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    background-color: #720000; 
+    background-color: rgba(156, 153, 153, 0.404); 
 }
 
 .btn-social {
@@ -144,12 +144,12 @@ input:focus {
 button {
     padding: 12px 48px;
     border-radius: 50px;
-    color: black;
+    color: #fff ;
     margin-top: 1rem;
     cursor: pointer;
     outline: none;
     border-width: 0;
-    background-color: #720000;
+    background-color: black;
     font-weight: 600;
     width: 100%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
@@ -194,9 +194,3 @@ button:hover {
 .subname input {
     width: 200px;
 }
-
-
-
-
-
-
