@@ -20,14 +20,13 @@ class usuarios:
     def crear_usuarios (self , nombre:str , apellido:str):
         new_password = encriptar(self.__password)[1]
         cursor.execute (f'CALL crear_usuario ("{nombre}" , "{apellido}" , "{self.__email}" , "{new_password}")')
-        print(new_password)
         database.commit ()
         return True
     
     def verificar_usuario (self , correo:str , contraseña:str):
         cursor.execute (f"SELECT * FROM verificacion WHERE email = '{correo}'")
         email , passwd =  cursor.fetchone ()
-        passw = encriptar(contraseña)[1][:-13]
+        passw = encriptar(contraseña)[1][:-13]  
         return email == correo and passwd == passw
 
 def eliminar_usuario (correo):

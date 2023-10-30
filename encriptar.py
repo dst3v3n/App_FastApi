@@ -6,9 +6,9 @@ def encriptar (Contraseña:str):
     hashed = bcrypt.hashpw(password, salt)
     return [password , str(hashed)]
 
-def desencriptar (Contraseña):
-    encript = encriptar(Contraseña)
-    if bcrypt.checkpw(encript[0], encript[1]):
-        return True
-    else:
-        return False
+# def desencriptar (Contraseña):
+#     encript = encriptar(Contraseña)
+#     if bcrypt.checkpw(encript[0], encript[1]):
+#         return True
+#     else:
+#         return False

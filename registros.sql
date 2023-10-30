@@ -16,7 +16,7 @@ CREATE PROCEDURE crear_usuario (
 	Nombre VARCHAR (50),
    Apellido VARCHAR (50),
    Email VARCHAR (50),
-   Passwd VARCHAR (50)
+   Passwd VARCHAR (300)
 )
 BEGIN
 	INSERT INTO usuarios () VALUES (Nombre , Apellido , Email , Passwd);
@@ -59,7 +59,7 @@ DELIMITER ;
 #passwd
 DELIMITER //
 CREATE PROCEDURE update_passwd (
-	Passwd VARCHAR (50),
+	Passwd VARCHAR (300),
    Email VARCHAR (50)
 )
 BEGIN
