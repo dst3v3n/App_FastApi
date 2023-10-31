@@ -8,7 +8,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/static/css/login.css">
 </head>
-<body>
+<body class="hidden">
+    <div class="centrado" id="onload">	
+		<div class="cssload-loader">SUPLES SHOP</div>
+	</div>
     <main class="form">
         <form action="/inicio" class="sub-form" method="post">
             <div class="upper-form">
@@ -55,5 +58,7 @@
         </form>
     </main>
     <script src="/static/js/vista.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/static/js/loader.js"></script>
 </body>
 </html>

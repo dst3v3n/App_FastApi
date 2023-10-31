@@ -1,3 +1,8 @@
+### pip install "fastapi[all]" ###
+### pip install bcrypt ###
+### uvicorn front:app --reload ###
+### Thunder client ###
+
 from fastapi import FastAPI , Response , Form
 from fastapi.responses import HTMLResponse , FileResponse
 from fastapi.staticfiles import StaticFiles
